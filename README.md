@@ -9,4 +9,4 @@ To get this script working for your client you must do a few things:
 - You must enter your User Agent into the header variable. You can find your User Agent at https://www.whatismybrowser.com/detect/what-is-my-user-agent
 - You must enable less secure apps on your google account 
 
-This script can be executed in two ways. Currently it's set to run once and end. If you want to use this script as a daemon or run it in the brackground of a project then you can comment the 'ONE TIME EXECECTION" block and uncomment the "BACKGROUND EXECUTION" block.
+This script can be executed in two ways. Currently it's set to run once and end. If you want to use this script as a daemon or run it in the brackground of a project then you can comment the 'ONE TIME EXECECTION" block and uncomment the "BACKGROUND EXECUTION" block. When running as a background process, the script will check your products once per day.
