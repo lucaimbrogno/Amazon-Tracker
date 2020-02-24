@@ -95,10 +95,10 @@ valid_products = []
 
 for product in product_info:
     product_name = product['product_name']
-    url = product['url']
+    product_url = product['url']
     desired_price = product['desired_price']
     
-    current_price = get_product_price(url)
+    current_price = get_product_price(product_url)
     if current_price is not None and current_price <= desired_price:
         valid_products.append(product)
     
@@ -117,10 +117,10 @@ send_email(valid_products)
 #    
 #    for product in product_info:
 #        product_name = product['product_name']
-#        url = product['url']
+#        product_url = product['url']
 #        desired_price = product['desired_price']
 #        
-#        current_price = get_product_price(url)
+#        current_price = get_product_price(product_url)
 #        if current_price is not None and current_price <= desired_price:
 #            valid_products.append(product)
 #        
@@ -131,5 +131,3 @@ send_email(valid_products)
 #    time.sleep(86400)
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-# must enable less secure apps on google acc
